@@ -1,7 +1,7 @@
-// Nuestro valor inicial sera un Objeto que
 
 import { useState } from "react";
 
+// Nuestro valor inicial sera un Objeto que
 // recibiremos desde el exterior
 export const useForm = (initialForm = {}) => {
 
@@ -29,6 +29,7 @@ export const useForm = (initialForm = {}) => {
 
 
   return {
+    ...formState,
     formState,
     onInputChange,
     onResetForm
