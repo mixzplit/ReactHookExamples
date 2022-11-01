@@ -8,7 +8,7 @@ jest.mock("../../src/hooks/useFetch");
 jest.mock("../../src/hooks/useCounter");
 
 describe("<MultipleCustomHooks> tests", () => {
-  const incrementMock = jest.fn();
+  const incrementMock = jest.fn(); //Emulamos la funcion increment de useCounter
   useCounter.mockReturnValue({
     counter: 1,
     increment: incrementMock

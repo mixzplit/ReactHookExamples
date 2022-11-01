@@ -9,7 +9,7 @@ describe("Hook useForm tests", () => {
 
   test("should be return default values", () => {
     const { result } = renderHook(() => useForm(initialForm));
-    console.log(result);
+    // console.log(result);
 
     expect(result.current).toEqual({
       name:  initialForm.name,
