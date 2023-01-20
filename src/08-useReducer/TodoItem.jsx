@@ -5,7 +5,7 @@ export const TodoItem = ({ todo, onDelete, onToggle }) => {
       la tarea seleccionada de la lista es marcada como 'done: true' */}
       <span 
         className={`align-self-center ${(todo.done) ? 'text-decoration-line-through' : ''}` } 
-        onClick={() => onToggle(todo.id)}>
+        onClick={() => onToggle(todo.id)} aria-label='span'>
         {todo.description}
       </span>
       <button className="btn btn-danger" onClick={() => onDelete(todo.id)}>
